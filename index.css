@@ -1,0 +1,243 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
+/*Text Selection Color*/
+::selection {
+    background: #000;
+    color: #fff;
+}
+::-moz-selection {
+    background: #000;
+    color: #fff;
+}
+
+/*Reset apple form styles*/
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background-image: none;
+}
+
+:root {
+    /* Reset Font Weight variable values */
+    --type-weight--100: 100;
+    --type-weight--200: 200;
+    --type-weight--300: 300;
+    --type-weight--400: 400;
+    --type-weight--500: 500;
+    --type-weight--600: 600;
+    --type-weight--700: 700;
+    --type-weight--800: 800;
+    --type-weight--900: 900;
+    --main-blue: #3366FF;
+}
+
+.cc-accent {
+    background-color: var(--main-blue) !important;
+    color: white !important;
+}
+
+.black-text {
+    color: black !important;
+}
+
+.bootcamp_learn_content {
+    background-image: url("./circle.svg") !important;
+    color: white !important;
+}
+
+.home-hero_cta button {
+    padding: 15px 65px !important;
+    font-size: 14px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.b_logo-bg {
+    background-image: url("./hover-effect.svg") !important;
+}
+
+.b-logo {
+    .b_logo-bg {
+        transform: translateY(5%) scale(0) !important;
+    }
+}
+
+.b-logo:hover {
+    .b_logo-bg {
+        transition: 0.35s ease all !important;
+        transform: translateY(5%) scale(1) !important;
+    }
+}
+
+
+.btn.cc-tertiary {
+    background-color: var(--main-blue) !important;
+    color: white !important;
+}
+
+.nav-brand-long {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: initial !important;
+}
+
+.nav-brand-long svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.d_nav-brand {
+    height: initial !important;
+}
+
+.nav-brand-short {
+    width: initial !important;
+    height: initial !important;
+}
+
+    /*.u-text-center {*/
+/*    color: black !important;*/
+/*}*/
+
+.why-block {
+    background-color: var(--main-blue) !important;
+    color: white !important;
+}
+
+.heading-128 {
+    color: white !important;
+}
+
+.label {
+    color: white;
+}
+
+.btn.cc-light:hover {
+    background-color: var(--main-blue) !important;
+    color: white !important;
+}
+
+.weight-500 {
+    font-weight: 500;
+}
+
+/* Remove top margin on rich text first child */
+.w-richtext > :first-child {
+    margin-top: 0;
+}
+
+/* Remove bottom margin of rich text last child */
+.w-richtext > :last-child,
+.w-richtext ol li:last-child,
+.w-richtext ul li:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: calc(10.67px + 5.33 * ((100vw - 992px) / 448));
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.rich-text blockquote {
+    position: relative;
+}
+
+.rich-text blockquote:after {
+    content: "";
+    position: absolute;
+    width: 2.625rem;
+    height: 1.75rem;
+    top: 1.5rem;
+    background-image: url("https://cdn.prod.website-files.com/667150f66409572775122b43/6674976b90255877c7f197c9_Vector.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.rich-text blockquote:before {
+    content: "";
+    position: absolute;
+    width: 2.625rem;
+    height: 1.75rem;
+    bottom: 1.5rem;
+    background-image: url("https://cdn.prod.website-files.com/667150f66409572775122b43/6674976b90255877c7f197c9_Vector.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.nav-link_wrapper:hover .nav-link_bg {
+    transform: scale(1);
+    opacity: 1;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-track {
+    animation: scroll 20s linear infinite;
+}
+
+* {
+    overscroll-behavior: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 0.5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.d_nav-brand.is-short {
+    .nav-brand-short {
+        opacity: 1;
+    }
+
+    .nav-brand-long {
+        opacity: 0;
+    }
+}
