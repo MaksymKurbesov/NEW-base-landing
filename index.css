@@ -204,6 +204,43 @@ select {
     opacity: 1;
 }
 
+.why-hero-image {
+    height: 17rem !important;
+}
+
+.nav-social:hover {
+    color: var(--main-blue) !important;
+}
+
+.btn:hover, .fs-cc-prefs_header, .btn.cc-accent-inverse  {
+    background-color: var(--main-blue) !important;
+    color: white !important;
+}
+
+
+.why-rollup-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.section.cc-why_cta {
+    background-image: url("/why-circles.svg");
+}
+
+.faq-icon {
+    color: var(--main-blue) !important;
+}
+
+.why-how_row, .why-how_col, .module.cc-three, .module.cc-four, .module.cc-five {
+    background-color: var(--main-blue);
+    color: white !important;
+}
+
+
+.nav-link_bg {
+    background-image: url('/hover-effect.svg');
+}
+
 @keyframes scroll {
     from {
         transform: translateX(0);
@@ -257,6 +294,7 @@ select {
         opacity: 0;
     }
 }
+
 
 @media screen and (max-width: 767px) {
     .b_cta-img svg {
