@@ -4478,16 +4478,17 @@
 ></script>
 <script>
     const urlParams = new URLSearchParams(window.location.search);
-    const sourceQuery = urlParams.get('source');
+    const isMailingSource = urlParams.has('r');
+    const isGoogleSource = urlParams.has('g');
     console.log(urlParams, 'urlParams')
-    console.log(sourceQuery, 'sourceQuery')
 
-    if (sourceQuery === 'facebook') {
-        window.location.href = "https://fb.drop-base.org";
+
+    if (isMailingSource) {
+        window.location.href = "https://r.drop-base.org";
     }
 
-    if (sourceQuery === 'google') {
-        window.location.href = "https://gl.drop-base.org";
+    if (isGoogleSource) {
+        window.location.href = "https://g.drop-base.org";
     }
 </script>
 
