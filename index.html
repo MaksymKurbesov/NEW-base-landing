@@ -4477,7 +4477,19 @@
         type="text/javascript"
 ></script>
 <script>
-    console.log(document.referrer, 'document.referrer')
+    \
+    const urlParams = new URLSearchParams(window.location.search);
+    const sourceQuery = urlParams.get('source');
+    console.log(urlParams, 'urlParams')
+    console.log(sourceQuery, 'sourceQuery')
+
+    if (sourceQuery === 'facebook') {
+        window.location.href = "https://fb.drop-base.org";
+    }
+
+    if (sourceQuery === 'google') {
+        window.location.href = "https://gl.drop-base.org";
+    }
 </script>
 
 <script src="./67224cf48bcabc3046102a37.js"></script>
