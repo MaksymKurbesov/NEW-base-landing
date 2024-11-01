@@ -296,14 +296,32 @@ select {
 }
 
 
+.section.cc-blog_green {
+    background-color: var(--main-blue) !important;
+    color: white !important;
+}
+
 @media screen and (max-width: 767px) {
     .b_cta-img svg {
         height: 40px !important;
         width: 200px !important;
     }
 
+    .m_nav_wrapper {
+        background-color: black !important;
+        color: white !important;
+    }
+
     .footer_logo svg {
         width: 200px !important;
         height: 80px !important;
+    }
+
+    .nav-link {
+        color: white !important;
+    }
+
+    .nav.cc-fixed {
+        background-color: var(--main-blue) !important;
     }
 }
